@@ -54,17 +54,6 @@ namespace WindowsFormsApp1
                 Application.Exit();
             }
         }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
      //------------------------------------------------------------------------------ 
         private void chk_Pepproni_CheckedChanged(object sender, EventArgs e)
         {
@@ -78,7 +67,6 @@ namespace WindowsFormsApp1
                 chk_Champignon1.Enabled = true;
                 chk_Polser1.Enabled = true;
                 chk_Ost1.Enabled = true;
-
             }
             else
             {
@@ -88,7 +76,6 @@ namespace WindowsFormsApp1
                 chk_Champignon1.Enabled = false;
                 chk_Polser1.Enabled = false;
                 chk_Ost1.Enabled = false;
-
             }
         }
      //------------------------------------------------------------------------------
@@ -105,11 +92,6 @@ namespace WindowsFormsApp1
                 chk_Champignon2.Enabled = true;
                 chk_Polser2.Enabled = true;
                 chk_Ost2.Enabled = true;
-
-
-
-
-
             }
             else
             {
@@ -119,8 +101,6 @@ namespace WindowsFormsApp1
                 chk_Champignon2.Enabled = false;
                 chk_Polser2.Enabled = false;
                 chk_Ost2.Enabled = false;
-
-
             }
         }
      //------------------------------------------------------------------------------
@@ -136,10 +116,6 @@ namespace WindowsFormsApp1
                 chk_Champignon3.Enabled = true;
                 chk_Polser3.Enabled = true;
                 chk_Ost3.Enabled = true;
-
-
-
-
             }
             else
             {
@@ -149,8 +125,6 @@ namespace WindowsFormsApp1
                 chk_Champignon3.Enabled = false;
                 chk_Polser3.Enabled = false;
                 chk_Ost3.Enabled = false;
-
-
             }
         }
      //------------------------------------------------------------------------------
@@ -162,7 +136,11 @@ namespace WindowsFormsApp1
             int kebabTotal = 0;
             int skinkeTotal = 0;
 
-            if (comboBox1.SelectedItem.ToString() == "Familie")
+            int champignon1 = 0, polser1 = 0, ost1 = 0;
+            int champignon2 = 0, polser2 = 0, ost2 = 0;
+            int champignon3 = 0, polser3 = 0, ost3 = 0;
+
+            if (chk_Pepproni.Checked && comboBox1.SelectedItem.ToString() == "Familie")
             {
                 pepproniTotal = topping.famPepproniPris * int.Parse(Amount1_Txtbox.Text);               
             }
@@ -171,7 +149,7 @@ namespace WindowsFormsApp1
                 pepproniTotal = pizza.pepproniPris * int.Parse(Amount1_Txtbox.Text);
             }
 
-            if (comboBox2.SelectedItem.ToString() == "Familie")
+            if (chk_Kebab.Checked && comboBox2.SelectedItem.ToString() == "Familie")
             {
                 kebabTotal = pizza.famKebabPris * int.Parse(Amount2_Txtbox.Text);
             }
@@ -180,8 +158,7 @@ namespace WindowsFormsApp1
                 kebabTotal = pizza.kebabaPris * int.Parse(Amount2_Txtbox.Text);
             }
 
-
-            if (comboBox3.SelectedItem.ToString() == "Familie")
+            if (chk_Skinke.Checked && comboBox3.SelectedItem.ToString() == "Familie")
             {
                 skinkeTotal = pizza.famSkinkePris * int.Parse(Amount3_Txtbox.Text);
             }
@@ -193,62 +170,58 @@ namespace WindowsFormsApp1
      //------------------------------------------------------------------------------
             if (chk_Champignon1.Checked)
             {
-                Price_Txtbox.Text = topping.champignonPris.ToString();
-            }
-            else
-            {
-                chk_Champignon1.Checked = false;
+                champignon1 = topping.champignonPris * int.Parse(Amount1_Txtbox.Text);
             }
 
             if (chk_Polser1.Checked)
             {
-                Price_Txtbox.Text = topping.polserPris.ToString();
+                polser1 = topping.polserPris * int.Parse(Amount2_Txtbox.Text);
             }
 
             if (chk_Ost1.Checked)
             {
-                Price_Txtbox.Text = topping.ostPris.ToString();
+                ost1 = topping.ostPris * int.Parse(Amount3_Txtbox.Text);
             }
 
      //------------------------------------------------------------------------------
             if (chk_Champignon2.Checked)
             {
-                Price_Txtbox.Text = topping.champignonPris.ToString();
+                champignon2 = topping.champignonPris * int.Parse(Amount1_Txtbox.Text);
             }
 
             if (chk_Polser2.Checked)
             {
-                Price_Txtbox.Text = topping.polserPris.ToString();
+                polser2 = topping.polserPris * int.Parse(Amount2_Txtbox.Text);
             }
 
             if (chk_Ost2.Checked)
             {
-                Price_Txtbox.Text = topping.ostPris.ToString();
+                ost2 = topping.ostPris * int.Parse(Amount3_Txtbox.Text);
             }
 
      //------------------------------------------------------------------------------
             if (chk_Champignon3.Checked)
             {
-                Price_Txtbox.Text = topping.champignonPris.ToString();
+                champignon3 = topping.champignonPris * int.Parse(Amount1_Txtbox.Text);
             }
 
             if (chk_Polser3.Checked)
             {
-                Price_Txtbox.Text = topping.polserPris.ToString();
+                polser3 = topping.polserPris * int.Parse(Amount2_Txtbox.Text);
             }
 
             if (chk_Ost3.Checked)
             {
-                Price_Txtbox.Text = topping.ostPris.ToString();
+                ost3 = topping.ostPris * int.Parse(Amount3_Txtbox.Text);
             }
 
+            int total1 = pepproniTotal + champignon1 + polser1 + ost1;
+            int total2 = skinkeTotal + champignon2 + polser2 + ost2;
+            int total3 = kebabTotal + champignon3 + polser3 + ost3;
 
-            int total = pepproniTotal + skinkeTotal + kebabTotal;
+            int total = total1 + total2 + total3;
             Price_Txtbox.Text = total.ToString();
-
-            
-
-
+       
         }
     }
 }

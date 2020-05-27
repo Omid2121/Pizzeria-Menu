@@ -35,23 +35,27 @@
             // Pizza_label
             // 
             this.Pizza_label.AutoSize = true;
-            this.Pizza_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pizza_label.Location = new System.Drawing.Point(340, 177);
+            this.Pizza_label.Font = new System.Drawing.Font("Segoe Print", 100.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pizza_label.Location = new System.Drawing.Point(82, 50);
             this.Pizza_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Pizza_label.Name = "Pizza_label";
-            this.Pizza_label.Size = new System.Drawing.Size(171, 52);
+            this.Pizza_label.Size = new System.Drawing.Size(691, 295);
             this.Pizza_label.TabIndex = 2;
             this.Pizza_label.Text = "Pizzeia";
+            this.Pizza_label.Click += new System.EventHandler(this.Pizza_label_Click);
             // 
             // Menu_Button
             // 
-            this.Menu_Button.Location = new System.Drawing.Point(371, 274);
+            this.Menu_Button.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Menu_Button.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Menu_Button.Location = new System.Drawing.Point(356, 378);
             this.Menu_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Menu_Button.Name = "Menu_Button";
-            this.Menu_Button.Size = new System.Drawing.Size(108, 39);
+            this.Menu_Button.Size = new System.Drawing.Size(138, 51);
             this.Menu_Button.TabIndex = 3;
             this.Menu_Button.Text = "Menu";
-            this.Menu_Button.UseVisualStyleBackColor = true;
+            this.Menu_Button.UseVisualStyleBackColor = false;
             this.Menu_Button.Click += new System.EventHandler(this.Menu_Button_Click);
             // 
             // Start_Menu

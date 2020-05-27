@@ -23,5 +23,10 @@ namespace WindowsFormsApp1
             openForm.Show();
             Visible = false;
         }
+
+        private void Pizza_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
