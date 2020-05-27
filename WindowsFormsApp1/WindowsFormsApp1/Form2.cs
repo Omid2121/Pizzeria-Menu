@@ -175,18 +175,18 @@ namespace WindowsFormsApp1
 
             if (chk_Polser1.Checked)
             {
-                polser1 = topping.polserPris * int.Parse(Amount2_Txtbox.Text);
+                polser1 = topping.polserPris * int.Parse(Amount1_Txtbox.Text);
             }
 
             if (chk_Ost1.Checked)
             {
-                ost1 = topping.ostPris * int.Parse(Amount3_Txtbox.Text);
+                ost1 = topping.ostPris * int.Parse(Amount1_Txtbox.Text);
             }
 
      //------------------------------------------------------------------------------
             if (chk_Champignon2.Checked)
             {
-                champignon2 = topping.champignonPris * int.Parse(Amount1_Txtbox.Text);
+                champignon2 = topping.champignonPris * int.Parse(Amount2_Txtbox.Text);
             }
 
             if (chk_Polser2.Checked)
@@ -196,18 +196,18 @@ namespace WindowsFormsApp1
 
             if (chk_Ost2.Checked)
             {
-                ost2 = topping.ostPris * int.Parse(Amount3_Txtbox.Text);
+                ost2 = topping.ostPris * int.Parse(Amount2_Txtbox.Text);
             }
 
      //------------------------------------------------------------------------------
             if (chk_Champignon3.Checked)
             {
-                champignon3 = topping.champignonPris * int.Parse(Amount1_Txtbox.Text);
+                champignon3 = topping.champignonPris * int.Parse(Amount3_Txtbox.Text);
             }
 
             if (chk_Polser3.Checked)
             {
-                polser3 = topping.polserPris * int.Parse(Amount2_Txtbox.Text);
+                polser3 = topping.polserPris * int.Parse(Amount3_Txtbox.Text);
             }
 
             if (chk_Ost3.Checked)
@@ -220,7 +220,7 @@ namespace WindowsFormsApp1
             int total3 = kebabTotal + champignon3 + polser3 + ost3;
 
             int total = total1 + total2 + total3;
-            Price_Txtbox.Text = total.ToString();
+            Price_Txtbox.Text = total.ToString() + ("KR");
        
         }
     }
