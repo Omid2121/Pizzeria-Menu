@@ -6,10 +6,35 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    class Topping : Pizza
+    public class Toppings
     {
-        public int champignonPris = 20;
-        public int polserPris = 20;
-        public int ostPris = 20;
+        public List<Topping> toppingList = new List<Topping>();
+        public Toppings()
+        {
+            toppingList.AddRange(new List<Topping>
+            {
+                new Topping("Champignon", 20),
+                new Topping("Polser", 20),
+                new Topping("Ost", 20),
+                new Topping("Tomatsovs", 10),
+                new Topping("DeepPan", 30),
+            });
+        }
+    }
+
+    public class Topping
+    {
+        public string name;
+        public int price;
+
+        public Topping(string name, int price)
+        {
+            this.name = name;
+            this.price = price;
+        }
     }
 }
+
+
+
+
