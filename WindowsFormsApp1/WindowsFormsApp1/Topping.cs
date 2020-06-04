@@ -16,11 +16,13 @@ namespace WindowsFormsApp1
                 new Topping("Champignon", 20),
                 new Topping("Polser", 20),
                 new Topping("Ost", 20),
-                new Topping("Tomatsovs", 10),
+                new Topping("Tomatsauce", 10),
                 new Topping("DeepPan", 30),
             });
         }
     }
+
+
 
     public class Topping
     {

@@ -73,24 +73,12 @@
             this.fanta_ComboBox = new System.Windows.Forms.ComboBox();
             this.cola_ComboBox = new System.Windows.Forms.ComboBox();
             this.chk_Cola = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Amount6_Txtbox = new System.Windows.Forms.TextBox();
+            this.Amount5_Txtbox = new System.Windows.Forms.TextBox();
+            this.Amount4_Txtbox = new System.Windows.Forms.TextBox();
             this.chk_Pepsi = new System.Windows.Forms.CheckBox();
             this.chk_Fanta = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.remove_Button = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -103,17 +91,18 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.Price_Txtbox);
-            this.panel4.Location = new System.Drawing.Point(656, 474);
+            this.panel4.Location = new System.Drawing.Point(752, 465);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(412, 76);
+            this.panel4.Size = new System.Drawing.Size(387, 44);
             this.panel4.TabIndex = 24;
             // 
             // Price_Txtbox
             // 
+            this.Price_Txtbox.BackColor = System.Drawing.SystemColors.Window;
             this.Price_Txtbox.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Price_Txtbox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Price_Txtbox.Location = new System.Drawing.Point(25, 23);
+            this.Price_Txtbox.Location = new System.Drawing.Point(13, 7);
             this.Price_Txtbox.Margin = new System.Windows.Forms.Padding(4);
             this.Price_Txtbox.Name = "Price_Txtbox";
             this.Price_Txtbox.ReadOnly = true;
@@ -131,17 +120,18 @@
             this.panel2.Controls.Add(this.chk_Polser3);
             this.panel2.Controls.Add(this.chk_Champignon3);
             this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Location = new System.Drawing.Point(539, 74);
+            this.panel2.Location = new System.Drawing.Point(614, 70);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(205, 345);
+            this.panel2.Size = new System.Drawing.Size(230, 345);
             this.panel2.TabIndex = 22;
             // 
             // chk_Skinke
             // 
             this.chk_Skinke.AutoSize = true;
             this.chk_Skinke.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Skinke.Location = new System.Drawing.Point(33, 30);
+            this.chk_Skinke.ForeColor = System.Drawing.Color.Maroon;
+            this.chk_Skinke.Location = new System.Drawing.Point(47, 30);
             this.chk_Skinke.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Skinke.Name = "chk_Skinke";
             this.chk_Skinke.Size = new System.Drawing.Size(130, 30);
@@ -152,41 +142,42 @@
             // 
             // Amount3_Txtbox
             // 
-            this.Amount3_Txtbox.Location = new System.Drawing.Point(30, 89);
+            this.Amount3_Txtbox.Location = new System.Drawing.Point(44, 89);
             this.Amount3_Txtbox.Margin = new System.Windows.Forms.Padding(4);
             this.Amount3_Txtbox.Name = "Amount3_Txtbox";
             this.Amount3_Txtbox.Size = new System.Drawing.Size(124, 22);
             this.Amount3_Txtbox.TabIndex = 13;
+            this.Amount3_Txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Amount3_Txtbox_KeyPress);
             // 
             // chk_Deep3
             // 
             this.chk_Deep3.AutoSize = true;
             this.chk_Deep3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Deep3.Location = new System.Drawing.Point(29, 297);
+            this.chk_Deep3.Location = new System.Drawing.Point(43, 297);
             this.chk_Deep3.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Deep3.Name = "chk_Deep3";
-            this.chk_Deep3.Size = new System.Drawing.Size(111, 30);
+            this.chk_Deep3.Size = new System.Drawing.Size(102, 30);
             this.chk_Deep3.TabIndex = 10;
-            this.chk_Deep3.Text = "Deep-pan";
+            this.chk_Deep3.Text = "DeepPan";
             this.chk_Deep3.UseVisualStyleBackColor = true;
             // 
             // chk_Tomat3
             // 
             this.chk_Tomat3.AutoSize = true;
             this.chk_Tomat3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Tomat3.Location = new System.Drawing.Point(29, 270);
+            this.chk_Tomat3.Location = new System.Drawing.Point(43, 270);
             this.chk_Tomat3.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Tomat3.Name = "chk_Tomat3";
-            this.chk_Tomat3.Size = new System.Drawing.Size(111, 30);
+            this.chk_Tomat3.Size = new System.Drawing.Size(123, 30);
             this.chk_Tomat3.TabIndex = 10;
-            this.chk_Tomat3.Text = "Tomatsovs";
+            this.chk_Tomat3.Text = "Tomatsauce";
             this.chk_Tomat3.UseVisualStyleBackColor = true;
             // 
             // chk_Ost3
             // 
             this.chk_Ost3.AutoSize = true;
             this.chk_Ost3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Ost3.Location = new System.Drawing.Point(29, 245);
+            this.chk_Ost3.Location = new System.Drawing.Point(43, 245);
             this.chk_Ost3.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Ost3.Name = "chk_Ost3";
             this.chk_Ost3.Size = new System.Drawing.Size(59, 30);
@@ -198,7 +189,7 @@
             // 
             this.chk_Polser3.AutoSize = true;
             this.chk_Polser3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Polser3.Location = new System.Drawing.Point(29, 217);
+            this.chk_Polser3.Location = new System.Drawing.Point(43, 217);
             this.chk_Polser3.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Polser3.Name = "chk_Polser3";
             this.chk_Polser3.Size = new System.Drawing.Size(79, 30);
@@ -210,7 +201,7 @@
             // 
             this.chk_Champignon3.AutoSize = true;
             this.chk_Champignon3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Champignon3.Location = new System.Drawing.Point(29, 188);
+            this.chk_Champignon3.Location = new System.Drawing.Point(43, 188);
             this.chk_Champignon3.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Champignon3.Name = "chk_Champignon3";
             this.chk_Champignon3.Size = new System.Drawing.Size(128, 30);
@@ -220,11 +211,13 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Familie",
             "Medium"});
-            this.comboBox3.Location = new System.Drawing.Point(29, 135);
+            this.comboBox3.Location = new System.Drawing.Point(43, 135);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(125, 24);
@@ -240,17 +233,18 @@
             this.panel3.Controls.Add(this.chk_Polser2);
             this.panel3.Controls.Add(this.chk_Champignon2);
             this.panel3.Controls.Add(this.comboBox2);
-            this.panel3.Location = new System.Drawing.Point(322, 74);
+            this.panel3.Location = new System.Drawing.Point(359, 70);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 345);
+            this.panel3.Size = new System.Drawing.Size(228, 345);
             this.panel3.TabIndex = 23;
             // 
             // chk_Kebab
             // 
             this.chk_Kebab.AutoSize = true;
             this.chk_Kebab.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Kebab.Location = new System.Drawing.Point(34, 30);
+            this.chk_Kebab.ForeColor = System.Drawing.Color.Maroon;
+            this.chk_Kebab.Location = new System.Drawing.Point(50, 30);
             this.chk_Kebab.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Kebab.Name = "chk_Kebab";
             this.chk_Kebab.Size = new System.Drawing.Size(126, 30);
@@ -261,41 +255,42 @@
             // 
             // Amount2_Txtbox
             // 
-            this.Amount2_Txtbox.Location = new System.Drawing.Point(34, 94);
+            this.Amount2_Txtbox.Location = new System.Drawing.Point(50, 94);
             this.Amount2_Txtbox.Margin = new System.Windows.Forms.Padding(4);
             this.Amount2_Txtbox.Name = "Amount2_Txtbox";
             this.Amount2_Txtbox.Size = new System.Drawing.Size(124, 22);
             this.Amount2_Txtbox.TabIndex = 13;
+            this.Amount2_Txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Amount2_Txtbox_KeyPress);
             // 
             // chk_Deep2
             // 
             this.chk_Deep2.AutoSize = true;
             this.chk_Deep2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Deep2.Location = new System.Drawing.Point(34, 297);
+            this.chk_Deep2.Location = new System.Drawing.Point(50, 297);
             this.chk_Deep2.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Deep2.Name = "chk_Deep2";
-            this.chk_Deep2.Size = new System.Drawing.Size(111, 30);
+            this.chk_Deep2.Size = new System.Drawing.Size(102, 30);
             this.chk_Deep2.TabIndex = 10;
-            this.chk_Deep2.Text = "Deep-pan";
+            this.chk_Deep2.Text = "DeepPan";
             this.chk_Deep2.UseVisualStyleBackColor = true;
             // 
             // chk_Tomat2
             // 
             this.chk_Tomat2.AutoSize = true;
             this.chk_Tomat2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Tomat2.Location = new System.Drawing.Point(34, 270);
+            this.chk_Tomat2.Location = new System.Drawing.Point(50, 270);
             this.chk_Tomat2.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Tomat2.Name = "chk_Tomat2";
-            this.chk_Tomat2.Size = new System.Drawing.Size(111, 30);
+            this.chk_Tomat2.Size = new System.Drawing.Size(123, 30);
             this.chk_Tomat2.TabIndex = 10;
-            this.chk_Tomat2.Text = "Tomatsovs";
+            this.chk_Tomat2.Text = "Tomatsauce";
             this.chk_Tomat2.UseVisualStyleBackColor = true;
             // 
             // chk_Ost2
             // 
             this.chk_Ost2.AutoSize = true;
             this.chk_Ost2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Ost2.Location = new System.Drawing.Point(34, 245);
+            this.chk_Ost2.Location = new System.Drawing.Point(50, 245);
             this.chk_Ost2.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Ost2.Name = "chk_Ost2";
             this.chk_Ost2.Size = new System.Drawing.Size(59, 30);
@@ -307,7 +302,7 @@
             // 
             this.chk_Polser2.AutoSize = true;
             this.chk_Polser2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Polser2.Location = new System.Drawing.Point(34, 217);
+            this.chk_Polser2.Location = new System.Drawing.Point(50, 217);
             this.chk_Polser2.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Polser2.Name = "chk_Polser2";
             this.chk_Polser2.Size = new System.Drawing.Size(79, 30);
@@ -319,7 +314,7 @@
             // 
             this.chk_Champignon2.AutoSize = true;
             this.chk_Champignon2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Champignon2.Location = new System.Drawing.Point(34, 188);
+            this.chk_Champignon2.Location = new System.Drawing.Point(50, 188);
             this.chk_Champignon2.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Champignon2.Name = "chk_Champignon2";
             this.chk_Champignon2.Size = new System.Drawing.Size(128, 30);
@@ -329,11 +324,13 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Familie",
             "Medium"});
-            this.comboBox2.Location = new System.Drawing.Point(34, 135);
+            this.comboBox2.Location = new System.Drawing.Point(50, 135);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(125, 24);
@@ -349,17 +346,18 @@
             this.panel1.Controls.Add(this.chk_Polser1);
             this.panel1.Controls.Add(this.chk_Champignon1);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Location = new System.Drawing.Point(99, 74);
+            this.panel1.Location = new System.Drawing.Point(101, 70);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 345);
+            this.panel1.Size = new System.Drawing.Size(234, 345);
             this.panel1.TabIndex = 21;
             // 
             // chk_Pepproni
             // 
             this.chk_Pepproni.AutoSize = true;
             this.chk_Pepproni.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Pepproni.Location = new System.Drawing.Point(38, 30);
+            this.chk_Pepproni.ForeColor = System.Drawing.Color.Maroon;
+            this.chk_Pepproni.Location = new System.Drawing.Point(44, 30);
             this.chk_Pepproni.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Pepproni.Name = "chk_Pepproni";
             this.chk_Pepproni.Size = new System.Drawing.Size(149, 30);
@@ -370,20 +368,21 @@
             // 
             // Amount1_Txtbox
             // 
-            this.Amount1_Txtbox.Location = new System.Drawing.Point(38, 91);
+            this.Amount1_Txtbox.Location = new System.Drawing.Point(44, 91);
             this.Amount1_Txtbox.Margin = new System.Windows.Forms.Padding(4);
             this.Amount1_Txtbox.Name = "Amount1_Txtbox";
             this.Amount1_Txtbox.Size = new System.Drawing.Size(125, 22);
             this.Amount1_Txtbox.TabIndex = 13;
+            this.Amount1_Txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Amount1_Txtbox_KeyPress);
             // 
             // chk_Deep1
             // 
             this.chk_Deep1.AutoSize = true;
             this.chk_Deep1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Deep1.Location = new System.Drawing.Point(38, 297);
+            this.chk_Deep1.Location = new System.Drawing.Point(44, 297);
             this.chk_Deep1.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Deep1.Name = "chk_Deep1";
-            this.chk_Deep1.Size = new System.Drawing.Size(128, 38);
+            this.chk_Deep1.Size = new System.Drawing.Size(102, 30);
             this.chk_Deep1.TabIndex = 10;
             this.chk_Deep1.Text = "DeepPan";
             this.chk_Deep1.UseVisualStyleBackColor = true;
@@ -392,19 +391,19 @@
             // 
             this.chk_Tomat1.AutoSize = true;
             this.chk_Tomat1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Tomat1.Location = new System.Drawing.Point(38, 270);
+            this.chk_Tomat1.Location = new System.Drawing.Point(44, 270);
             this.chk_Tomat1.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Tomat1.Name = "chk_Tomat1";
-            this.chk_Tomat1.Size = new System.Drawing.Size(111, 30);
+            this.chk_Tomat1.Size = new System.Drawing.Size(123, 30);
             this.chk_Tomat1.TabIndex = 10;
-            this.chk_Tomat1.Text = "Tomatsovs";
+            this.chk_Tomat1.Text = "Tomatsauce";
             this.chk_Tomat1.UseVisualStyleBackColor = true;
             // 
             // chk_Ost1
             // 
             this.chk_Ost1.AutoSize = true;
             this.chk_Ost1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Ost1.Location = new System.Drawing.Point(38, 245);
+            this.chk_Ost1.Location = new System.Drawing.Point(44, 245);
             this.chk_Ost1.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Ost1.Name = "chk_Ost1";
             this.chk_Ost1.Size = new System.Drawing.Size(59, 30);
@@ -416,7 +415,7 @@
             // 
             this.chk_Polser1.AutoSize = true;
             this.chk_Polser1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Polser1.Location = new System.Drawing.Point(38, 217);
+            this.chk_Polser1.Location = new System.Drawing.Point(44, 217);
             this.chk_Polser1.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Polser1.Name = "chk_Polser1";
             this.chk_Polser1.Size = new System.Drawing.Size(79, 30);
@@ -428,7 +427,7 @@
             // 
             this.chk_Champignon1.AutoSize = true;
             this.chk_Champignon1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Champignon1.Location = new System.Drawing.Point(38, 188);
+            this.chk_Champignon1.Location = new System.Drawing.Point(44, 188);
             this.chk_Champignon1.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Champignon1.Name = "chk_Champignon1";
             this.chk_Champignon1.Size = new System.Drawing.Size(128, 30);
@@ -438,11 +437,12 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Familie",
             "Medium"});
-            this.comboBox1.Location = new System.Drawing.Point(38, 135);
+            this.comboBox1.Location = new System.Drawing.Point(44, 135);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(125, 24);
@@ -450,13 +450,13 @@
             // 
             // Exit_button
             // 
-            this.Exit_button.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Exit_button.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_button.BackColor = System.Drawing.Color.Black;
+            this.Exit_button.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Exit_button.Location = new System.Drawing.Point(934, 570);
+            this.Exit_button.Location = new System.Drawing.Point(961, 588);
             this.Exit_button.Margin = new System.Windows.Forms.Padding(4);
             this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(134, 55);
+            this.Exit_button.Size = new System.Drawing.Size(130, 49);
             this.Exit_button.TabIndex = 18;
             this.Exit_button.Text = "Exit";
             this.Exit_button.UseVisualStyleBackColor = false;
@@ -464,13 +464,13 @@
             // 
             // Total_Button
             // 
-            this.Total_Button.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Total_Button.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Button.ForeColor = System.Drawing.Color.Cyan;
-            this.Total_Button.Location = new System.Drawing.Point(657, 570);
+            this.Total_Button.BackColor = System.Drawing.Color.Black;
+            this.Total_Button.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total_Button.ForeColor = System.Drawing.Color.MediumTurquoise;
+            this.Total_Button.Location = new System.Drawing.Point(823, 534);
             this.Total_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Total_Button.Name = "Total_Button";
-            this.Total_Button.Size = new System.Drawing.Size(134, 55);
+            this.Total_Button.Size = new System.Drawing.Size(130, 49);
             this.Total_Button.TabIndex = 19;
             this.Total_Button.Text = "Total";
             this.Total_Button.UseVisualStyleBackColor = false;
@@ -480,7 +480,7 @@
             // 
             this.Price_Lable.AutoSize = true;
             this.Price_Lable.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price_Lable.Location = new System.Drawing.Point(657, 442);
+            this.Price_Lable.Location = new System.Drawing.Point(753, 435);
             this.Price_Lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Price_Lable.Name = "Price_Lable";
             this.Price_Lable.Size = new System.Drawing.Size(84, 26);
@@ -491,7 +491,7 @@
             // 
             this.Topping_Lable.AutoSize = true;
             this.Topping_Lable.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Topping_Lable.Location = new System.Drawing.Point(6, 247);
+            this.Topping_Lable.Location = new System.Drawing.Point(9, 249);
             this.Topping_Lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Topping_Lable.Name = "Topping_Lable";
             this.Topping_Lable.Size = new System.Drawing.Size(73, 26);
@@ -502,7 +502,7 @@
             // 
             this.Amount_Lable.AutoSize = true;
             this.Amount_Lable.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amount_Lable.Location = new System.Drawing.Point(6, 159);
+            this.Amount_Lable.Location = new System.Drawing.Point(9, 161);
             this.Amount_Lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Amount_Lable.Name = "Amount_Lable";
             this.Amount_Lable.Size = new System.Drawing.Size(54, 26);
@@ -513,7 +513,7 @@
             // 
             this.Size_Lable.AutoSize = true;
             this.Size_Lable.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Size_Lable.Location = new System.Drawing.Point(4, 205);
+            this.Size_Lable.Location = new System.Drawing.Point(7, 207);
             this.Size_Lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Size_Lable.Name = "Size_Lable";
             this.Size_Lable.Size = new System.Drawing.Size(79, 26);
@@ -523,23 +523,23 @@
             // Pizza_Lable
             // 
             this.Pizza_Lable.AutoSize = true;
-            this.Pizza_Lable.Font = new System.Drawing.Font("Segoe Print", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pizza_Lable.Location = new System.Drawing.Point(-1, -1);
+            this.Pizza_Lable.Font = new System.Drawing.Font("Segoe Print", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pizza_Lable.Location = new System.Drawing.Point(1, -10);
             this.Pizza_Lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Pizza_Lable.Name = "Pizza_Lable";
-            this.Pizza_Lable.Size = new System.Drawing.Size(257, 71);
+            this.Pizza_Lable.Size = new System.Drawing.Size(311, 85);
             this.Pizza_Lable.TabIndex = 14;
             this.Pizza_Lable.Text = "Pizza Menu";
             // 
             // orderList_Button
             // 
-            this.orderList_Button.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.orderList_Button.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderList_Button.BackColor = System.Drawing.Color.Black;
+            this.orderList_Button.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderList_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.orderList_Button.Location = new System.Drawing.Point(794, 570);
+            this.orderList_Button.Location = new System.Drawing.Point(961, 534);
             this.orderList_Button.Margin = new System.Windows.Forms.Padding(4);
             this.orderList_Button.Name = "orderList_Button";
-            this.orderList_Button.Size = new System.Drawing.Size(134, 55);
+            this.orderList_Button.Size = new System.Drawing.Size(130, 49);
             this.orderList_Button.TabIndex = 19;
             this.orderList_Button.Text = "Add to List";
             this.orderList_Button.UseVisualStyleBackColor = false;
@@ -549,7 +549,7 @@
             // 
             this.orderPris_Lable.AutoSize = true;
             this.orderPris_Lable.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderPris_Lable.Location = new System.Drawing.Point(6, 465);
+            this.orderPris_Lable.Location = new System.Drawing.Point(7, 465);
             this.orderPris_Lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.orderPris_Lable.Name = "orderPris_Lable";
             this.orderPris_Lable.Size = new System.Drawing.Size(90, 26);
@@ -562,20 +562,21 @@
             this.panel5.Location = new System.Drawing.Point(98, 427);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(549, 213);
+            this.panel5.Size = new System.Drawing.Size(638, 213);
             this.panel5.TabIndex = 25;
             // 
             // orderList_dataGrid
             // 
             this.orderList_dataGrid.AllowUserToResizeColumns = false;
             this.orderList_dataGrid.AllowUserToResizeRows = false;
+            this.orderList_dataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.orderList_dataGrid.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.orderList_dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderList_dataGrid.Location = new System.Drawing.Point(3, 3);
             this.orderList_dataGrid.Name = "orderList_dataGrid";
             this.orderList_dataGrid.RowHeadersWidth = 51;
             this.orderList_dataGrid.RowTemplate.Height = 24;
-            this.orderList_dataGrid.Size = new System.Drawing.Size(543, 207);
+            this.orderList_dataGrid.Size = new System.Drawing.Size(632, 207);
             this.orderList_dataGrid.TabIndex = 28;
             // 
             // panel6
@@ -584,49 +585,55 @@
             this.panel6.Controls.Add(this.fanta_ComboBox);
             this.panel6.Controls.Add(this.cola_ComboBox);
             this.panel6.Controls.Add(this.chk_Cola);
-            this.panel6.Controls.Add(this.textBox3);
-            this.panel6.Controls.Add(this.textBox2);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.Amount6_Txtbox);
+            this.panel6.Controls.Add(this.Amount5_Txtbox);
+            this.panel6.Controls.Add(this.Amount4_Txtbox);
             this.panel6.Controls.Add(this.chk_Pepsi);
             this.panel6.Controls.Add(this.chk_Fanta);
-            this.panel6.Location = new System.Drawing.Point(761, 74);
+            this.panel6.Location = new System.Drawing.Point(868, 70);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(205, 345);
+            this.panel6.Size = new System.Drawing.Size(230, 345);
             this.panel6.TabIndex = 26;
             // 
             // pepsi_ComboBox
             // 
+            this.pepsi_ComboBox.BackColor = System.Drawing.SystemColors.Window;
+            this.pepsi_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pepsi_ComboBox.FormattingEnabled = true;
             this.pepsi_ComboBox.Items.AddRange(new object[] {
             "Lille",
             "Medium",
             "Stor"});
-            this.pepsi_ComboBox.Location = new System.Drawing.Point(33, 307);
+            this.pepsi_ComboBox.Location = new System.Drawing.Point(49, 307);
             this.pepsi_ComboBox.Name = "pepsi_ComboBox";
             this.pepsi_ComboBox.Size = new System.Drawing.Size(124, 24);
             this.pepsi_ComboBox.TabIndex = 15;
             // 
             // fanta_ComboBox
             // 
+            this.fanta_ComboBox.BackColor = System.Drawing.SystemColors.Window;
+            this.fanta_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fanta_ComboBox.FormattingEnabled = true;
             this.fanta_ComboBox.Items.AddRange(new object[] {
             "Lille",
             "Medium",
             "Stor"});
-            this.fanta_ComboBox.Location = new System.Drawing.Point(33, 202);
+            this.fanta_ComboBox.Location = new System.Drawing.Point(49, 202);
             this.fanta_ComboBox.Name = "fanta_ComboBox";
             this.fanta_ComboBox.Size = new System.Drawing.Size(124, 24);
             this.fanta_ComboBox.TabIndex = 15;
             // 
             // cola_ComboBox
             // 
+            this.cola_ComboBox.BackColor = System.Drawing.SystemColors.Window;
+            this.cola_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cola_ComboBox.FormattingEnabled = true;
             this.cola_ComboBox.Items.AddRange(new object[] {
             "Lille",
             "Medium",
             "Stor"});
-            this.cola_ComboBox.Location = new System.Drawing.Point(33, 86);
+            this.cola_ComboBox.Location = new System.Drawing.Point(49, 86);
             this.cola_ComboBox.Name = "cola_ComboBox";
             this.cola_ComboBox.Size = new System.Drawing.Size(124, 24);
             this.cola_ComboBox.TabIndex = 15;
@@ -635,191 +642,84 @@
             // 
             this.chk_Cola.AutoSize = true;
             this.chk_Cola.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Cola.Location = new System.Drawing.Point(33, 19);
+            this.chk_Cola.ForeColor = System.Drawing.Color.Maroon;
+            this.chk_Cola.Location = new System.Drawing.Point(49, 19);
             this.chk_Cola.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Cola.Name = "chk_Cola";
             this.chk_Cola.Size = new System.Drawing.Size(110, 30);
             this.chk_Cola.TabIndex = 14;
             this.chk_Cola.Text = "Coca-Cola";
             this.chk_Cola.UseVisualStyleBackColor = true;
+            this.chk_Cola.CheckedChanged += new System.EventHandler(this.chk_Cola_CheckedChanged);
             // 
-            // textBox3
+            // Amount6_Txtbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(33, 278);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 22);
-            this.textBox3.TabIndex = 13;
+            this.Amount6_Txtbox.Location = new System.Drawing.Point(49, 278);
+            this.Amount6_Txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Amount6_Txtbox.Name = "Amount6_Txtbox";
+            this.Amount6_Txtbox.Size = new System.Drawing.Size(73, 22);
+            this.Amount6_Txtbox.TabIndex = 13;
+            this.Amount6_Txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Amount6_Txtbox_KeyPress);
             // 
-            // textBox2
+            // Amount5_Txtbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(33, 173);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(73, 22);
-            this.textBox2.TabIndex = 13;
+            this.Amount5_Txtbox.Location = new System.Drawing.Point(49, 173);
+            this.Amount5_Txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Amount5_Txtbox.Name = "Amount5_Txtbox";
+            this.Amount5_Txtbox.Size = new System.Drawing.Size(73, 22);
+            this.Amount5_Txtbox.TabIndex = 13;
+            this.Amount5_Txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Amount5_Txtbox_KeyPress);
             // 
-            // textBox1
+            // Amount4_Txtbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(33, 57);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 22);
-            this.textBox1.TabIndex = 13;
+            this.Amount4_Txtbox.Location = new System.Drawing.Point(49, 57);
+            this.Amount4_Txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Amount4_Txtbox.Name = "Amount4_Txtbox";
+            this.Amount4_Txtbox.Size = new System.Drawing.Size(73, 22);
+            this.Amount4_Txtbox.TabIndex = 13;
+            this.Amount4_Txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Amount4_Txtbox_KeyPress);
             // 
             // chk_Pepsi
             // 
             this.chk_Pepsi.AutoSize = true;
             this.chk_Pepsi.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Pepsi.Location = new System.Drawing.Point(33, 235);
+            this.chk_Pepsi.ForeColor = System.Drawing.Color.Maroon;
+            this.chk_Pepsi.Location = new System.Drawing.Point(49, 235);
             this.chk_Pepsi.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Pepsi.Name = "chk_Pepsi";
             this.chk_Pepsi.Size = new System.Drawing.Size(73, 30);
             this.chk_Pepsi.TabIndex = 11;
             this.chk_Pepsi.Text = "Pepsi";
             this.chk_Pepsi.UseVisualStyleBackColor = true;
+            this.chk_Pepsi.CheckedChanged += new System.EventHandler(this.chk_Pepsi_CheckedChanged);
             // 
             // chk_Fanta
             // 
             this.chk_Fanta.AutoSize = true;
             this.chk_Fanta.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Fanta.Location = new System.Drawing.Point(33, 133);
+            this.chk_Fanta.ForeColor = System.Drawing.Color.Maroon;
+            this.chk_Fanta.Location = new System.Drawing.Point(49, 133);
             this.chk_Fanta.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Fanta.Name = "chk_Fanta";
             this.chk_Fanta.Size = new System.Drawing.Size(78, 30);
             this.chk_Fanta.TabIndex = 12;
             this.chk_Fanta.Text = "Fanta";
             this.chk_Fanta.UseVisualStyleBackColor = true;
+            this.chk_Fanta.CheckedChanged += new System.EventHandler(this.chk_Fanta_CheckedChanged);
             // 
-            // label1
+            // remove_Button
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(975, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 24);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "---Priser---";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(975, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 24);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Medium pizza = 50kr.";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(975, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 24);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Familie pizza = 100kr.";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(975, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 24);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Champignon = 20kr.";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(975, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 24);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Polser = 20kr.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(975, 235);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 24);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Ost = 20kr.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(975, 268);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 24);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Tomatsovs = 10kr.";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(975, 298);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 24);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Deep-Pan = 30kr.";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(975, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 24);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "---Topping---";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(975, 341);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 24);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "---Topping---";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(972, 373);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(215, 30);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Lille Sodavand = 20kr.";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(972, 403);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(250, 30);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "Medium Sodavand = 30kr.";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(975, 434);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(219, 30);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "Stor Sodavand = 40kr.";
+            this.remove_Button.BackColor = System.Drawing.Color.Black;
+            this.remove_Button.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remove_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.remove_Button.Location = new System.Drawing.Point(823, 588);
+            this.remove_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.remove_Button.Name = "remove_Button";
+            this.remove_Button.Size = new System.Drawing.Size(130, 49);
+            this.remove_Button.TabIndex = 19;
+            this.remove_Button.Text = "Remove ";
+            this.remove_Button.UseVisualStyleBackColor = false;
+            this.remove_Button.Click += new System.EventHandler(this.remove_Button_Click);
             // 
             // Menu
             // 
@@ -827,19 +727,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1182, 653);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -847,6 +734,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Exit_button);
+            this.Controls.Add(this.remove_Button);
             this.Controls.Add(this.orderList_Button);
             this.Controls.Add(this.Total_Button);
             this.Controls.Add(this.orderPris_Lable);
@@ -858,7 +746,7 @@
             this.MaximumSize = new System.Drawing.Size(1200, 700);
             this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "Menu";
-            this.Text = "Coca-Cola";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -920,27 +808,15 @@
         private System.Windows.Forms.CheckBox chk_Deep3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.CheckBox chk_Cola;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Amount6_Txtbox;
+        private System.Windows.Forms.TextBox Amount5_Txtbox;
+        private System.Windows.Forms.TextBox Amount4_Txtbox;
         private System.Windows.Forms.CheckBox chk_Pepsi;
         private System.Windows.Forms.CheckBox chk_Fanta;
         private System.Windows.Forms.DataGridView orderList_dataGrid;
         private System.Windows.Forms.ComboBox fanta_ComboBox;
         private System.Windows.Forms.ComboBox cola_ComboBox;
         private System.Windows.Forms.ComboBox pepsi_ComboBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button remove_Button;
     }
 }
