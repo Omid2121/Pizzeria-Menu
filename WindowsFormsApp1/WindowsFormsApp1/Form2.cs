@@ -438,18 +438,20 @@ namespace WindowsFormsApp1
 
             if (aPizza >= 2 && bDrink >= 2)
             {
-                Rabat();
+                //int totall = 0;
+                //int percent = 20;
+                //int result = 0;
+                ////Rabat();
+                //foreach (DataRow x in dataTable.Rows)
+                //{
+                //   totall += Convert.ToInt32(x.ItemArray[x.ItemArray.Length - 2]);
+
+                //}
+                //    result = (int) ((100f * percent) / totall);
+                //Price_Txtbox.Text = result.ToString();
             }
 
             orderList_dataGrid.DataSource = dataTable;
-        }
-
-        public void Rabat()
-        {
-            decimal percentage = 20;
-
-
-
         }
 
 
